@@ -42,7 +42,7 @@ Prussian government: [? if spd_prussia : in government - ?]
 
 [? if spd_in_government and sapd_toleration: <span style="color: #9B0000;">**SAPD**</span> toleration dissent: [+ kpd_coalition_dissent : coalition_dissent +] [+ kpd_coalition_dissent +] ?]
 
-Internal dissent: [+ dissent_percent : dissent +]
+Internal dissent: [+ dissent_percent : dissent +] ([+ dissent +])
 
 = Government
 
@@ -242,15 +242,15 @@ Economic growth: [+ economic_growth_2 +]%
 
 = Internal Factions of the <span style="color: #c00000;">**SPD**</span>
 
-{!<span class="tooltip-text" title="The Left is interested in radical, transformative policies and cooperation with the KPD.">Left</span>!} strength: [+ left_strength : strength +], dissent: [+ left_dissent : dissent +]
+{!<span class="tooltip-text" title="The Left is interested in radical, transformative policies and cooperation with the KPD.">Left</span>!} strength: [+ left_strength : strength +] ([+ left_strength +]), dissent: [+ left_dissent : dissent +] ([+ left_dissent +])
 
-{!<span class="tooltip-text" title="The Center is a faction of Center Marxists, between reform and revolution.">Center</span>!} strength: [+ center_strength : strength +], dissent: [+ center_dissent : dissent +]
+{!<span class="tooltip-text" title="The Center is a faction of Center Marxists, between reform and revolution.">Center</span>!} strength: [+ center_strength : strength +] ([+ center_strength +]), dissent: [+ center_dissent : dissent +] ([+ center_dissent +])
 
-{!<span class="tooltip-text" title="Labor's goal is economic reform and benefits for organized workers.">Labor</span>!} strength: [+ labor_strength : strength +], dissent: [+ labor_dissent : dissent +]
+{!<span class="tooltip-text" title="Labor's goal is economic reform and benefits for organized workers.">Labor</span>!} strength: [+ labor_strength : strength +] ([+ labor_strength +]), dissent: [+ labor_dissent : dissent +] ([+ labor_dissent +])
 
-{!<span class="tooltip-text" title="Reformists are pragmatic participants in government, and seek to expand the welfare state and defend democracy.">Reformist</span>!} strength: [+ reformist_strength : strength +], dissent: [+ reformist_dissent : dissent +]
+{!<span class="tooltip-text" title="Reformists are pragmatic participants in government, and seek to expand the welfare state and defend democracy.">Reformist</span>!} strength: [+ reformist_strength : strength +] ([+ reformist_strength +]), dissent: [+ reformist_dissent : dissent +] ([+ reformist_dissent +])
 
-[? if neorevisionism: {!<span class="tooltip-text" title="Neorevisionists focus on defending the republic and expanding democracy, supporting new propaganda methods and extra-parliamentary action">Neorevisionist</span>!} strength: [+ neorevisionist_strength : strength +], dissent: [+ neorevisionist_dissent : dissent +] ?]
+[? if neorevisionism: {!<span class="tooltip-text" title="Neorevisionists focus on defending the republic and expanding democracy, supporting new propaganda methods and extra-parliamentary action">Neorevisionist</span>!} strength: [+ neorevisionist_strength : strength +] ([+ neorevisionist_strength +]), dissent: [+ neorevisionist_dissent : dissent +] ([+ neorevisionist_dissent +]) ?]
 
 @paramilitaries
 on-arrival: {!
